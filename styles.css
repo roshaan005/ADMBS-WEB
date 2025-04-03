@@ -1,0 +1,85 @@
+/* Define the purple color theme */
+:root {
+    --primary-color: #6a0dad;  /* Main purple color */
+    --secondary-color: #8a2be2; /* Bright purple */
+    --light-purple: #d8b9ff; /* Light purple shade */
+    --dark-purple: #4b0082;  /* Deep purple */
+    --white: #ffffff;
+    --gray: #f4f0fa;
+}
+
+/* General styles */
+body {
+    background-color: var(--gray);
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.navbar-brand {
+    color: var(--white) !important;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: var(--white) !important;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--light-purple) !important;
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Buttons */
+.btn-purple {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 12px 24px;
+    transition: 0.3s;
+}
+
+.btn-purple:hover {
+    background-color: var(--dark-purple);
+    color: var(--white);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Feature Boxes */
+.feature-box {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+}
