@@ -86,3 +86,15 @@ body {
 .col{
     background-color:#7E61AB
 }
+
+.features-page-hero {
+    padding: 0;
+}
+
+.features-page-hero h1 {
+    font-size: 3.5rem;
+}
+
+.features-page-hero p {
+    font-size: 3.5rem;
+}
