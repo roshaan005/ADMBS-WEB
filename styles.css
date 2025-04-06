@@ -4,14 +4,26 @@
     --secondary-color: #8a2be2; /* Bright purple */
     --light-purple: #d8b9ff; /* Light purple shade */
     --dark-purple: #4b0082;  /* Deep purple */
-    --white: #ffffff;
-    --gray: #f4f0fa;
+    --white: #ffffff;        /* Light background */
+    --gray: #f4f0fa;         /* Light gray */
+    --text-color: #333;      /* Default text color */
+}
+
+/* Dark mode theme */
+body.dark-mode {
+    --primary-color: #4b0082;  /* Darker purple */
+    --secondary-color: #6a0dad; /* Adjusted purple */
+    --light-purple: #8a2be2; /* Slightly brighter purple */
+    --dark-purple: #2e003e;  /* Deepest purple */
+    --white: #1e1e1e;        /* Dark background */
+    --gray: #121212;         /* Darker gray */
+    --text-color: #f4f4f4;   /* Light text color */
 }
 
 /* General styles */
 body {
     background-color: var(--gray);
-    color: #333;
+    color: var(--text-color);
     font-family: Arial, sans-serif;
 }
 
@@ -22,16 +34,26 @@ body {
 
 .navbar-brand {
     color: var(--white) !important;
-    font-size: 1.5rem;
+    font-size: 1.8rem; /* Increased font size for better visibility */
+    font-weight: bold;
 }
 
 .nav-link {
     color: var(--white) !important;
+    font-size: 1rem; /* Adjusted font size for consistency */
     transition: 0.3s;
 }
 
 .nav-link:hover {
     color: var(--light-purple) !important;
+}
+
+.navbar-toggler {
+    border-color: var(--light-purple);
+}
+
+.navbar-toggler-icon {
+    background-color: var(--white);
 }
 
 /* Hero Section */
@@ -66,6 +88,7 @@ body {
 /* Feature Boxes */
 .feature-box {
     background: var(--white);
+    color: var(--text-color);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -83,6 +106,18 @@ body {
     text-align: center;
     padding: 20px;
 }
-.col{
-    background-color:#7E61AB
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .feature-box {
+        margin-bottom: 20px;
+    }
 }
