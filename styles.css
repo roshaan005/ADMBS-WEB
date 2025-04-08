@@ -33,8 +33,9 @@ body {
 }
 
 .navbar-brand {
+    font-family: 'Handsome', cursive; /* Use Handsome font */
+    font-size: 2.5rem; /* Adjust font size as needed */
     color: var(--white) !important;
-    font-size: 1.8rem; /* Increased font size for better visibility */
     font-weight: bold;
 }
 
@@ -120,4 +121,11 @@ body {
     .feature-box {
         margin-bottom: 20px;
     }
+}
+
+@font-face {
+    font-family: 'Handsome';
+    src: url('handsome.ttf') format('truetype'); /* Adjust the path if needed */
+    font-weight: normal;
+    font-style: normal;
 }
