@@ -7,8 +7,20 @@
     --secondary-color: #8a2be2; /* Bright purple */
     --light-purple: #d8b9ff; /* Light purple shade */
     --dark-purple: #4b0082;  /* Deep purple */
-    --white: #ffffff;
-    --gray: #f4f0fa;
+    --white: #ffffff;        /* Light background */
+    --gray: #f4f0fa;         /* Light gray */
+    --text-color: #333;      /* Default text color */
+}
+
+/* Dark mode theme */
+body.dark-mode {
+    --primary-color: #4b0082;  /* Darker purple */
+    --secondary-color: #6a0dad; /* Adjusted purple */
+    --light-purple: #8a2be2; /* Slightly brighter purple */
+    --dark-purple: #2e003e;  /* Deepest purple */
+    --white: #1e1e1e;        /* Dark background */
+    --gray: #121212;         /* Darker gray */
+    --text-color: #f4f4f4;   /* Light text color */
 }
 
 /* General styles */
@@ -24,17 +36,28 @@ body {
 }
 
 .navbar-brand {
+    font-family: 'Handsome', cursive; /* Use Handsome font */
+    font-size: 2.5rem; /* Adjust font size as needed */
     color: var(--white) !important;
-    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .nav-link {
     color: var(--white) !important;
+    font-size: 1rem; /* Adjusted font size for consistency */
     transition: 0.3s;
 }
 
 .nav-link:hover {
     color: var(--light-purple) !important;
+}
+
+.navbar-toggler {
+    border-color: var(--light-purple);
+}
+
+.navbar-toggler-icon {
+    background-color: var(--white);
 }
 
 /* Hero Section */
@@ -69,6 +92,7 @@ body {
 /* Feature Boxes */
 .feature-box {
     background: var(--white);
+    color: var(--text-color);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -79,6 +103,51 @@ body {
     transform: translateY(-5px);
 }
 
+/* Rounded box styles */
+.rounded-box {
+    background-color: #ffffff; /* White background */
+    color: #333; /* Dark text for contrast */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for visibility */
+    text-align: center;
+    position: relative;
+    height: 100%; /* Ensure all boxes are the same height */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: flex-start; /* Align content at the top */
+    align-items: center; /* Center content horizontally */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for rounded boxes */
+.rounded-box:hover {
+    transform: translateY(-10px); /* Move the box slightly upward */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Add a stronger shadow */
+}
+
+/* Icon box styles */
+.icon-box {
+    width: 80px;
+    height: 80px;
+    background-color: var(--primary-color, #6a0dad); /* Purple icon background */
+    color: white; /* White icon color */
+    border-radius: 50%; /* Circular icon box */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem; /* Icon size */
+    margin-bottom: 15px; /* Space below the icon */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for icon box */
+    transition: transform 0.3s ease; /* Smooth hover effect for icon */
+}
+
+/* Hover effect for icon box */
+.rounded-box:hover .icon-box {
+    transform: scale(1.1); /* Slightly enlarge the icon */
+}
+
+/* Footer */
 .footer {
     background-color: var(--primary-color);
     color: var(--white);
@@ -86,6 +155,7 @@ body {
     padding: 20px;
     margin-bottom: 0;
 }
+
 .col{
     background-color:#7E61AB
 }
@@ -248,4 +318,25 @@ body {
     .features-page-hero img {
         max-height: 250px;
     }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .feature-box {
+        margin-bottom: 20px;
+    }
+}
+
+@font-face {
+    font-family: 'Handsome';
+    src: url('handsome.ttf') format('truetype'); /* Adjust the path if needed */
+    font-weight: normal;
+    font-style: normal;
 }
