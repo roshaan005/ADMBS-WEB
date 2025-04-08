@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 /* Define the purple color theme */
 :root {
     --primary-color: #6a0dad;  /* Main purple color */
@@ -23,8 +26,8 @@ body.dark-mode {
 /* General styles */
 body {
     background-color: var(--gray);
-    color: var(--text-color);
-    font-family: Arial, sans-serif;
+    color: #333;
+    font-family: 'Inter', sans-serif;
 }
 
 /* Navbar */
@@ -150,7 +153,171 @@ body {
     color: var(--white);
     text-align: center;
     padding: 20px;
+    margin-bottom: 0;
 }
+
+.col{
+    background-color:#7E61AB
+}
+
+/* Feature Page styles*/
+
+.features-page-hero {
+    padding: 0;
+}
+
+.features-page-hero h1 {
+    font-size: 3.2rem;
+}
+
+.features-page-hero p {
+    font-size: 3.5rem;
+}
+
+.features-page-hero img {
+    max-height: 400px;
+    max-width: 100%;
+}
+
+.feature-card {
+    transition: all 0.3s ease;
+    border: 1px solid #e0e0e0;
+    position: relative;
+    padding-bottom: 2.5rem;
+}
+
+.feature-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 20px rgba(106, 13, 173, 0.15);
+}
+
+.feature-description {
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.feature-icon {
+    color: var(--primary-color);
+}
+
+.feature-block {
+    padding: 1.5rem 0;
+}
+
+.feature-title {
+    font-size: 36px;
+    font-weight: 550;
+    color: var(--primary-color);
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.feature-description {
+    font-size: 20px;
+}
+
+.card-title {
+    font-size: 24px;
+}
+
+/* Feature link styles */
+.feature-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--primary-color);
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.feature-link:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+.feature-link i {
+    font-size: 0.8em;
+    margin-left: 4px;
+}
+
+.feature-card .feature-link-wrapper {
+    position: absolute;
+    bottom: 1rem;
+    left: 1.25rem;
+}
+
+
+@media (max-width: 991px) {
+    .features-page-hero img {
+        max-height: 400px;
+    }
+}
+
+@media (max-width: 767px) {
+    .feature-title {
+        font-size: 23px;
+    }
+
+    .feature-description {
+        font-size: 16px;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+
+    .features-page-hero h1 {
+        font-size: 2.2rem !important;
+    }
+
+    .features-page-hero p {
+        font-size: 15px !important;
+        margin: 30px 10px;
+    }
+
+    .features-page-hero a {
+        font-size: 14px;
+    }
+
+    .feature-card {
+        margin-bottom: 15px;
+    }
+
+    .feature-icon {
+        font-size: 1.5rem;
+    }
+
+    .features-page-hero img {
+        max-height: 325px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 0;
+    }
+
+    .container > .btn-purple {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .feature-block {
+        padding: 1rem 0;
+    }
+
+    .feature-card {
+        margin-bottom: 1rem;
+    }
+
+    .features-page-hero img {
+        max-height: 250px;
+    }
 
 /* Responsive Design */
 @media (max-width: 768px) {

@@ -12,6 +12,7 @@
     
     <!-- Bootstrap JavaScript (Local File) -->
     <script src="js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Dark Mode Script -->
     <script src="script.js" defer></script>
 </head>
@@ -38,6 +39,353 @@
         </div>
     </nav>
 
-    <div>Features Page</div>
+    <!-- Hero Section -->
+    <header class="hero features-page-hero col">
+        <div class="container py-0 py-lg-5">
+            <div class="row align-items-center">
+                <!-- Text content - order-2 on mobile, order-1 on larger screens -->
+                <div class="col-lg-6 text-center text-lg-start order-2 order-lg-1">
+                    <h1 class="display-4 fw-bold mb-3 ps-3 pe-3">Understand Credily's Core Features</h1>
+                    <p class="lead fs-6 fs-md-5 ps-3 pe-3 mb-4">Connect with confidence using our innovative trust-based social platform</p>
+                    <a href="#" class="btn btn-purple btn-lg rounded-2 ms-3 mb-4 mb-lg-0">Get Started</a>
+                </div>
+                <!-- Image content - order-1 on mobile, order-2 on larger screens -->
+                <div class="col-lg-6 text-center order-1 order-lg-2">
+                    <img src="images/hero-sec-image.svg" alt="Credily mutual connections concept" class="img-fluid mt-lg-0">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Core Features Section -->
+    <section class="features-section py-5">
+        <div class="container">
+
+            <!-- Feature 1: Anonymous Reviews -->
+            <div class="feature-block mb-5">
+                <div class="row mb-3">
+                    <div class="col-12 col-lg-6 col-xl-8">
+                        <h3 class="feature-title">Anonymous Reviews</h3>
+                        <p class="feature-description">Share honest feedback about others without revealing your identity, creating a safe space for authentic insights.</p>
+                        <a href="#" class="btn btn-purple mb-3 rounded-3">Explore Anonymous Reviews</a>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <!-- Attribute Card 1 -->
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100">
+                            <div class="card-body p-4">
+                                <div class="feature-icon mb-3">
+                                    <i class="bi bi-person-lock fs-2"></i>
+                                </div>
+                                <h4 class="card-title h6">Identity Protection</h4>
+                                <p class="card-text">Your name remains hidden while your valuable feedback helps others make informed decisions.</p>
+                                <div class="feature-link-wrapper">
+                                    <a href="#" class="feature-link">See identity protection <i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Attribute Card 2 -->
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100">
+                            <div class="card-body p-4">
+                                <div class="feature-icon mb-3">
+                                    <i class="bi bi-people fs-2"></i>
+                                </div>
+                                <h4 class="card-title h6">Mutual Visibility</h4>
+                                <p class="card-text">Reviews are only visible to people who share a mutual connection with the reviewed person.</p>
+                                <div class="feature-link-wrapper">
+                                    <a href="#" class="feature-link">See mutual visibility <i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Attribute Card 3 -->
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100">
+                            <div class="card-body p-4">
+                                <div class="feature-icon mb-3">
+                                    <i class="bi bi-chat-square-text fs-2"></i>
+                                </div>
+                                <h4 class="card-title h6">Honest Expression</h4>
+                                <p class="card-text">Feel free to provide candid feedback without fear of social repercussions.</p>
+                                <div class="feature-link-wrapper">
+                                    <a href="#" class="feature-link">See honest expression <i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 2: AI-Powered Sentiment Analysis -->
+            <div class="feature-block mb-5">
+                <div class="row mb-3">
+                    <div class="col-12 col-lg-6 col-xl-8">
+                        <h3 class="feature-title">AI-Powered Analysis</h3>
+                        <p class="feature-description">Our integrated AI technology analyzes reviews to generate objective sentiment scores and valuable insights.</p>
+                        <a href="#" class="btn btn-purple mb-3 rounded-3">Explore AI-Powered Analysis</a>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <!-- Attribute Card 1 -->
+                    <div class="col-md-6">
+                        <div class="card feature-card h-100">
+                            <div class="card-body p-4">
+                                <div class="feature-icon mb-3">
+                                    <i class="bi bi-bar-chart-line fs-2"></i>
+                                </div>
+                                <h4 class="card-title h6">Sentiment Scoring</h4>
+                                <p class="card-text">AI evaluates language patterns, context, and tone to create unbiased assessments of all feedback.</p>
+                                <div class="feature-link-wrapper">
+                                    <a href="#" class="feature-link">See sentiment scoring <i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Attribute Card 2 -->
+                    <div class="col-md-6">
+                        <div class="card feature-card h-100">
+                            <div class="card-body p-4">
+                                <div class="feature-icon mb-3">
+                                    <i class="bi bi-shield-check fs-2"></i>
+                                </div>
+                                <h4 class="card-title h6">Bias Detection</h4>
+                                <p class="card-text">Our AI identifies and filters out potentially harmful or unfairly biased reviews to maintain quality.</p>
+                                <div class="feature-link-wrapper">
+                                    <a href="#" class="feature-link">See bias detection <i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 3: Smart Reputation Score -->
+            <div class="feature-block mb-5">
+                <div class="row mb-3">
+                    <div class="col-12 col-lg-6 col-xl-8">
+                        <h3 class="feature-title">Smart Reputation Score</h3>
+                        <p class="feature-description">A dynamic rating system for a user that evolves based on feedback patterns and creates a justified picture of perception.</p>
+                        <a href="#" class="btn btn-purple mb-3 rounded-3">Explore Reputation Scoring</a>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <!-- Attribute Card 1 -->
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100">
+                            <div class="card-body p-4">
+                                <div class="feature-icon mb-3">
+                                    <i class="bi bi-arrow-repeat fs-2"></i>
+                                </div>
+                                <h4 class="card-title h6">Adaptive Metrics</h4>
+                                <p class="card-text">Scores adapt over time, giving more weight to recent behavior and consistent feedback patterns.</p>
+                                <div class="feature-link-wrapper">
+                                    <a href="#" class="feature-link">See adaptive metrics <i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Attribute Card 2 -->
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100">
+                            <div class="card-body p-4">
+                                <div class="feature-icon mb-3">
+                                    <i class="bi bi-graph-up-arrow fs-2"></i>
+                                </div>
+                                <h4 class="card-title h6">Growth Tracking</h4>
+                                <p class="card-text">Monitor how perceptions change over time with historical data and trend analysis.</p>
+                                <div class="feature-link-wrapper">
+                                    <a href="#" class="feature-link">See growth tracking <i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Attribute Card 3 -->
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100">
+                            <div class="card-body p-4">
+                                <div class="feature-icon mb-3">
+                                    <i class="bi bi-star-half fs-2"></i>
+                                </div>
+                                <h4 class="card-title h6">Contextual Rating</h4>
+                                <p class="card-text">Scores are interpreted within your social network, creating relevant reputation metrics.</p>
+                                <div class="feature-link-wrapper">
+                                    <a href="#" class="feature-link">See contextual rating <i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 4: Category-Based Reviews -->
+            <div class="feature-block mb-5">
+                <div class="row mb-3">
+                    <div class="col-12 col-lg-6 col-xl-8">
+                        <h3 class="feature-title">Multi-Dimensional Reviews</h3>
+                        <p class="feature-description">Rate specific aspects of character like trustworthiness, honesty, kindness, and reliability for deeper insights.</p>
+                        <a href="#" class="btn btn-purple mb-3 rounded-3">Explore Multi-dimensional Reviews</a>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <!-- Attribute Card 1 -->
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100">
+                            <div class="card-body p-4">
+                                <div class="feature-icon mb-3">
+                                    <i class="bi bi-list-check fs-2"></i>
+                                </div>
+                                <h4 class="card-title h6">Targeted Categories</h4>
+                                <p class="card-text">Evaluate specific character traits rather than giving generic overall ratings.</p>
+                                <div class="feature-link-wrapper">
+                                    <a href="#" class="feature-link">See targeted categories <i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Attribute Card 2 -->
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100">
+                            <div class="card-body p-4">
+                                <div class="feature-icon mb-3">
+                                    <i class="bi bi-person-check fs-2"></i>
+                                </div>
+                                <h4 class="card-title h6">Strength Recognition</h4>
+                                <p class="card-text">Identify and celebrate positive traits that might otherwise go unrecognized.</p>
+                                <div class="feature-link-wrapper">
+                                    <a href="#" class="feature-link">See strength recognition <i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Attribute Card 3 -->
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100">
+                            <div class="card-body p-4">
+                                <div class="feature-icon mb-3">
+                                    <i class="bi bi-box-arrow-in-down-right fs-2"></i>
+                                </div>
+                                <h4 class="card-title h6">Nuanced Feedback</h4>
+                                <p class="card-text">Provide detailed insights instead of one-dimensional opinions about others.</p>
+                                <div class="feature-link-wrapper">
+                                    <a href="#" class="feature-link">See nuanced feedback <i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 5: Privacy & Moderation -->
+            <div class="feature-block mb-5">
+                <div class="row mb-3">
+                    <div class="col-12 col-lg-6 col-xl-8">
+                        <h3 class="feature-title">Privacy & Moderation</h3>
+                        <p class="feature-description">We prioritize user wellbeing with robust privacy controls and content moderation to ensure a safe environment.</p>
+                        <a href="#" class="btn btn-purple mb-3 rounded-3">Explore Privacy & Moderation</a>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <!-- Attribute Card 1 -->
+                    <div class="col-md-6">
+                        <div class="card feature-card h-100">
+                            <div class="card-body p-4">
+                                <div class="feature-icon mb-3">
+                                    <i class="bi bi-shield-lock fs-2"></i>
+                                </div>
+                                <h4 class="card-title h6">Secure Data Handling</h4>
+                                <p class="card-text">All user data is encrypted and protected with industry-leading security practices.</p>
+                                <div class="feature-link-wrapper">
+                                    <a href="#" class="feature-link">See secure data handling <i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Attribute Card 2 -->
+                    <div class="col-md-6">
+                        <div class="card feature-card h-100">
+                            <div class="card-body p-4">
+                                <div class="feature-icon mb-3">
+                                    <i class="bi bi-flag fs-2"></i>
+                                </div>
+                                <h4 class="card-title h6">Content Oversight</h4>
+                                <p class="card-text">Report unfair or inappropriate feedback for thorough human review and action.</p>
+                                <div class="feature-link-wrapper">
+                                    <a href="#" class="feature-link">See content oversight <i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 6: Mutual-Based Visibility -->
+            <div class="feature-block mb-5">
+                <div class="row mb-3">
+                    <div class="col-12 col-lg-6 col-xl-8">
+                        <h3 class="feature-title">Contextual Network</h3>
+                        <p class="feature-description">Our unique visibility model ensures reviews are only visible within shared social networks for relevant insights.</p>
+                        <a href="#" class="btn btn-purple mb-3 rounded-3">Explore Contextual Network</a>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <!-- Attribute Card 1 -->
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100">
+                            <div class="card-body p-4">
+                                <div class="feature-icon mb-3">
+                                    <i class="bi bi-node-plus fs-2"></i>
+                                </div>
+                                <h4 class="card-title h6">Connection Mapping</h4>
+                                <p class="card-text">Sophisticated algorithms identify mutual connections to determine review visibility.</p>
+                                <div class="feature-link-wrapper">
+                                    <a href="#" class="feature-link">See connection mapping <i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Attribute Card 2 -->
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100">
+                            <div class="card-body p-4">
+                                <div class="feature-icon mb-3">
+                                    <i class="bi bi-eye fs-2"></i>
+                                </div>
+                                <h4 class="card-title h6">Circle of Trust</h4>
+                                <p class="card-text">See reviews from people within your extended network for more relevant insights.</p>
+                                <div class="feature-link-wrapper">
+                                    <a href="#" class="feature-link">See circle of trust <i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Attribute Card 3 -->
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100">
+                            <div class="card-body p-4">
+                                <div class="feature-icon mb-3">
+                                    <i class="bi bi-lock fs-2"></i>
+                                </div>
+                                <h4 class="card-title h6">Privacy Protection</h4>
+                                <p class="card-text">Your feedback remains visible only to relevant connections, never to strangers.</p>
+                                <div class="feature-link-wrapper">
+                                    <a href="#" class="feature-link">See privacy protection <i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Credily. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
