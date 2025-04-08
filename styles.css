@@ -100,6 +100,50 @@ body {
     transform: translateY(-5px);
 }
 
+/* Rounded box styles */
+.rounded-box {
+    background-color: #ffffff; /* White background */
+    color: #333; /* Dark text for contrast */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for visibility */
+    text-align: center;
+    position: relative;
+    height: 100%; /* Ensure all boxes are the same height */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: flex-start; /* Align content at the top */
+    align-items: center; /* Center content horizontally */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for rounded boxes */
+.rounded-box:hover {
+    transform: translateY(-10px); /* Move the box slightly upward */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Add a stronger shadow */
+}
+
+/* Icon box styles */
+.icon-box {
+    width: 80px;
+    height: 80px;
+    background-color: var(--primary-color, #6a0dad); /* Purple icon background */
+    color: white; /* White icon color */
+    border-radius: 50%; /* Circular icon box */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem; /* Icon size */
+    margin-bottom: 15px; /* Space below the icon */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for icon box */
+    transition: transform 0.3s ease; /* Smooth hover effect for icon */
+}
+
+/* Hover effect for icon box */
+.rounded-box:hover .icon-box {
+    transform: scale(1.1); /* Slightly enlarge the icon */
+}
+
 /* Footer */
 .footer {
     background-color: var(--primary-color);
