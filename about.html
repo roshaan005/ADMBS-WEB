@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
     
@@ -51,17 +53,42 @@
 
         /* Icon box styles */
         .icon-box {
-            width: 80px;
-            height: 80px;
-            background-color: var(--primary-color, #6a0dad); /* Purple icon background */
-            color: white; /* White icon color */
+            font-size: 3.5rem; /* Increase icon size */
+            margin-bottom: 15px; /* Space below the icon */
+            background-color: #f8f9fa; /* Off-white background */
+            color: #ffffff; /* Default icon color */
             border-radius: 50%; /* Circular icon box */
+            width: 100px; /* Increase width for consistency */
+            height: 100px; /* Increase height for consistency */
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 2rem; /* Icon size */
-            margin-bottom: 15px; /* Space below the icon */
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for icon box */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+        }
+
+        /* Specific colors for each icon */
+        .icon-box .bi-eye {
+            color: #007bff; /* Blue for Transparency */
+        }
+
+        .icon-box .bi-heart {
+            color: #ff0019; /* Red for Empathy */
+        }
+
+        .icon-box .bi-check-circle {
+            color: #28a745; /* Green for Accountability */
+        }
+
+        .icon-box .bi-people {
+            color: #ffc107; /* Yellow for Community-Driven */
+        }
+
+        .icon-box .bi-shield-lock {
+            color: #6c757d; /* Gray for Privacy & Respect */
+        }
+
+        .icon-box .bi-arrow-up-circle {
+            color: #17a2b8; /* Teal for Growth & Healing */
         }
 
         /* Title and text styles */
@@ -79,6 +106,30 @@
             line-height: 1.5; /* Improve readability */
             flex-grow: 1; /* Ensures text takes up available space evenly */
         }
+
+        /* Style for the empathy icon */
+        .empathy-icon {
+            width: 100px; /* Set the width of the icon */
+            height: 100px; /* Set the height of the icon */
+            object-fit: contain; /* Ensure the image scales properly */
+            display: block; /* Ensure the image behaves like a block element */
+            margin: 0 auto; /* Center the image horizontally */
+            filter: brightness(0) saturate(100%) invert(35%) sepia(100%) saturate(500%) hue-rotate(325deg) brightness(110%) contrast(105%);
+            /* The filter above applies a bright red color overlay */
+        }
+
+        /* Background for Our Story section */
+        .our-story-section {
+            background-color: #f3e5f5; /* Light purple */
+            padding: 50px 0; /* Add padding for spacing */
+        }
+
+        /* Background for Our Values section */
+        .our-values-section {
+            background-color: #e1bee7; /* Medium purple */
+            padding: 50px 0; /* Add padding for spacing */
+        }
+       
     </style>
 </head>
 <body>
@@ -170,7 +221,7 @@
             <div class="col-md-4 mb-4">
                 <div class="rounded-box">
                     <div class="icon-box">
-                        <i class="bi bi-heart"></i> <!-- Empathy Icon -->
+                        <img src="images/empathy.png" alt="Empathy Icon" class="empathy-icon">
                     </div>
                     <h5 class="value-title">Empathy</h5>
                     <p class="value-text">Every review comes from a place of personal experience. We encourage understanding, not judgment.</p>
@@ -237,6 +288,7 @@
                         <i class="bi bi-telephone-fill text-primary me-3 fs-4"></i>
                         <span><strong>Phone (Pakistan):</strong> +92 3366278600</span>
                     </li>
+                    
                 </ul>
             </div>
         </div>
