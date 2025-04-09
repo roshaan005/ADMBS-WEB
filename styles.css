@@ -939,7 +939,6 @@ body.dark-mode .form-section .form-container {
 }
 
 .form-check-input:focus {
-    box-shadow: 0px 0px 5px rgba(106, 13, 173, 0.5); /* Purple focus outline */
+    box-shadow: 0px 0px 5px rgba(106, 13, 173, 0.5); 
 }
 
-/* Navbar link hover effect - Dark Mode */
