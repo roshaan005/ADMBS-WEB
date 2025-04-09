@@ -2,20 +2,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const darkModeToggle = document.getElementById('darkModeToggle');
     const body = document.body;
 
-    // Check if dark mode is already enabled in localStorage
+    // Check if dark mode was previously enabled
     if (localStorage.getItem('dark-mode') === 'enabled') {
         body.classList.add('dark-mode');
+        darkModeToggle.checked = true;
     }
 
-    // Toggle dark mode on button click
-    darkModeToggle.addEventListener('click', () => {
-        body.classList.toggle('dark-mode');
-
-        // Save the dark mode state in localStorage
-        if (body.classList.contains('dark-mode')) {
-            localStorage.setItem('dark-mode', 'enabled');
+    // Toggle dark mode on switch change
+    darkModeToggle.addEventListener('change', () => {
+        if (darkModeToggle.checked) {
+            body.classList.add('dark-mode');
+            localStorage.setItem('dark-mode', 'enabled'); // Save preference
         } else {
-            localStorage.setItem('dark-mode', 'disabled');
+            body.classList.remove('dark-mode');
+            localStorage.setItem('dark-mode', 'disabled'); // Save preference
         }
     });
 });

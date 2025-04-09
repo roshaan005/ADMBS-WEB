@@ -17,10 +17,143 @@ body.dark-mode {
     --primary-color: #4b0082;  /* Darker purple */
     --secondary-color: #6a0dad; /* Adjusted purple */
     --light-purple: #8a2be2; /* Slightly brighter purple */
-    --dark-purple: #2e003e;  /* Deepest purple */
-    --white: #1e1e1e;        /* Dark background */
-    --gray: #121212;         /* Darker gray */
+    --dark-purple: #e9b3fb;  /* Deepest purple */
+    --white: #ffffff;        /* Dark background */
+    --gray: #494343;         /* Darker gray */
     --text-color: #f4f4f4;   /* Light text color */
+    background-color: #2a1e2f; /* Dark background */
+    color: #f4f4f4; /* Light text color */
+}
+
+/* Dark mode styles */
+.navbar.dark-mode {
+    background-color: #2a1e2f; /* Same as body dark mode background */
+    color: #f4f4f4; /* Light text */
+}
+
+/* Navbar link styles - Dark Mode */
+.navbar.dark-mode .nav-link {
+    color: #d1d1d1 !important; /* Lighter text color for better visibility */
+    background-color: transparent !important; /* Remove background */
+    transition: color 0.3s ease; /* Smooth transition for color changes */
+}
+
+/* Navbar link hover effect - Dark Mode */
+.navbar.dark-mode .nav-link:hover {
+    color: #ffffff !important; /* Bright white text on hover */
+    background-color: transparent !important; /* No background on hover */
+}
+
+.footer.dark-mode {
+    background-color: #2a1e2f; /* Darker background for the footer */
+    color: #f4f4f4; /* Light text for contrast */
+}
+
+.hero.dark-mode {
+    background-color: #2a2a3d; /* Darker hero section */
+    color: #f4f4f4; /* Light text */
+}
+
+.rounded-box.dark-mode {
+    background-color: #2a2a3d; /* Darker value box background */
+    color: #f4f4f4; /* Light text */
+    border: 1px solid rgba(244, 244, 244, 0.2); /* Subtle border */
+}
+
+.rounded-box.dark-mode:hover {
+    border: 1px solid var(--light-purple); /* Purple border on hover */
+    box-shadow: 0px 2px 8px rgba(138, 43, 226, 0.2); /* Subtle purple shadow */
+}
+
+.icon-box.dark-mode {
+    background-color: transparent; /* Transparent icon background */
+    color: var(--light-purple); /* Purple icon color */
+}
+
+.btn-purple.dark-mode {
+    background-color: var(--dark-purple); /* Darker button background */
+    color: #f4f4f4; /* Light text */
+}
+
+.btn-purple.dark-mode:hover {
+    background-color: var(--primary-color); /* Highlighted button background */
+    color: #ffffff; /* White text */
+}
+
+/* Feature Title - Dark Mode */
+.feature-title.dark-mode {
+    color: #8110d2; /* Bright white for better visibility */
+}
+
+/* Card Title - Dark Mode */
+.card-title.dark-mode {
+    color: #ffffff; /* Bright white for better visibility */
+}
+
+/* Feature Description - Dark Mode */
+.feature-description.dark-mode {
+    color: #d1d1d1; /* Light gray for better readability */
+}
+
+/* Exclude picture div in Contact Us from dark mode */
+.contact-us-section .picture-div {
+    background-color: #ffffff !important; /* Keep the background white */
+    color: inherit; /* Ensure text color remains unchanged */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for better visibility */
+    z-index: 1; /* Ensure it appears above other elements */
+}
+
+/* Ensure picture div remains unaffected in dark mode */
+body.dark-mode .contact-us-section .picture-div {
+    background-color: #ffffff !important; /* Force white background in dark mode */
+    color: inherit; /* Keep text color consistent */
+}
+
+/* Ensure picture div in Contact Us has rounded corners with shadow */
+.contact-us-section .picture-div {
+    background-color: #ffffff !important; /* Keep the background white */
+    color: inherit; /* Ensure text color remains unchanged */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    z-index: 1; /* Ensure it appears above other elements */
+    border-radius: 20px; /* Rounded corners */
+    overflow: hidden; /* Ensure content stays within the shape */
+    width: 200px; /* Set a fixed width */
+    height: 200px; /* Set a fixed height */
+    display: flex; /* Center content inside */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    margin: 0 auto; /* Center the div horizontally */
+}
+
+/* Ensure Contact Us picture is larger */
+.contact-us-section .picture-div img {
+    width: 100%; /* Make the image responsive */
+    max-width: 500px; /* Increase the maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 20px; /* Match the rounded corners of other images */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    margin: 0 auto; /* Center the image */
+}
+
+/* Contact Us image styling */
+.contact-us-section .contact-img {
+    width: 100%; /* Make the image responsive */
+    max-width: 600px; /* Set a larger maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 20px; /* Add rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    margin: 0 auto; /* Center the image */
+}
+
+/* Purple color for icons in Contact Us */
+.contact-us-section .text-purple {
+    color: #6a0dad !important; /* Purple color for icons */
+}
+
+/* Purple color for email and telephone icons in Contact Us */
+.contact-us-section .bi-envelope-fill,
+.contact-us-section .bi-telephone-fill {
+    color: #6a0dad; /* Purple color */
 }
 
 /* General styles */
@@ -75,18 +208,18 @@ body {
 
 /* Buttons */
 .btn-purple {
-    background-color: var(--secondary-color);
-    color: var(--white);
+    background-color: var(--secondary-color); /* Default button color */
+    color: var(--white); /* White text */
     font-weight: bold;
     border-radius: 25px;
     padding: 12px 24px;
-    transition: 0.3s;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn-purple:hover {
-    background-color: var(--dark-purple);
-    color: var(--white);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #4b0082; /* Deep purple on hover */
+    color: var(--white); /* Keep text white */
+    box-shadow: 0px 4px 10px rgba(75, 0, 130, 0.3); /* Subtle shadow */
 }
 
 /* Feature Boxes */
@@ -109,7 +242,7 @@ body {
     color: #333; /* Dark text for contrast */
     border-radius: 15px; /* Rounded corners */
     padding: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for visibility */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Updated shadow for visibility */
     text-align: center;
     position: relative;
     height: 100%; /* Ensure all boxes are the same height */
@@ -118,28 +251,54 @@ body {
     justify-content: flex-start; /* Align content at the top */
     align-items: center; /* Center content horizontally */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    
 }
 
 /* Hover effect for rounded boxes */
 .rounded-box:hover {
     transform: translateY(-10px); /* Move the box slightly upward */
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Add a stronger shadow */
+    border: 1px solid var(--primary-color); /* Purple outline */
+    box-shadow: 0px 2px 8px rgba(106, 13, 173, 0.1); /* Thinner purple shadow */
 }
 
 /* Icon box styles */
 .icon-box {
-    width: 80px;
-    height: 80px;
-    background-color: var(--primary-color, #6a0dad); /* Purple icon background */
-    color: white; /* White icon color */
+    font-size: 3.5rem; /* Updated icon size */
+    margin-bottom: 15px;
+    background-color: transparent; /* Updated background color */
+    color: #ffffff; /* Updated icon color */
     border-radius: 50%; /* Circular icon box */
+    width: 100px; /* Updated width */
+    height: 100px; /* Updated height */
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem; /* Icon size */
-    margin-bottom: 15px; /* Space below the icon */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for icon box */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Updated shadow for icon box */
     transition: transform 0.3s ease; /* Smooth hover effect for icon */
+}
+
+.icon-box .bi-eye {
+    color: #007bff;
+}
+
+.icon-box .bi-heart {
+    color: #ff0019;
+}
+
+.icon-box .bi-check-circle {
+    color: #28a745;
+}
+
+.icon-box .bi-people {
+    color: #ffc107;
+}
+
+.icon-box .bi-shield-lock {
+    color: #6c757d;
+}
+
+.icon-box .bi-arrow-up-circle {
+    color: #17a2b8;
 }
 
 /* Hover effect for icon box */
@@ -154,6 +313,12 @@ body {
     text-align: center;
     padding: 20px;
     margin-bottom: 0;
+}
+
+/* Footer - Dark Mode */
+body.dark-mode .footer {
+    background-color: #2a1e2f !important; /* Darker background for the footer */
+    color: #f4f4f4 !important; /* Light text for contrast */
 }
 
 .col{
@@ -248,6 +413,59 @@ body {
     left: 1.25rem;
 }
 
+/* Value Box */
+.value-box {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: var(--primary-color, #f5f5f5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    color: white;
+    font-size: 2rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Value Title */
+.value-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Value Text */
+.value-text {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+/* Empathy Icon */
+.empathy-icon {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    filter: brightness(0) saturate(100%) invert(35%) sepia(100%) saturate(500%) hue-rotate(325deg) brightness(110%) contrast(105%);
+}
+
+/* Our Story Section */
+.our-story-section {
+    background-color: #f3e5f5;
+    padding: 50px 0;
+}
+
+/* Our Values Section */
+.our-values-section {
+    background-color: #e1bee7;
+    padding: 50px 0;
+}
 
 @media (max-width: 991px) {
     .features-page-hero img {
@@ -318,7 +536,7 @@ body {
     .features-page-hero img {
         max-height: 250px;
     }
-
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     .navbar-brand {
@@ -336,8 +554,34 @@ body {
 
 @font-face {
     font-family: 'Handsome';
-    src: url('handsome.ttf') format('truetype'); /* Adjust the path if needed */
+    src: url('handsome.woff2') format('woff2'),
+         url('handsome.woff') format('woff'),
+         url('handsome.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+
+/* Style the toggle switch */
+.form-check-input {
+    background-color: #6a0dad; /* Purple background for the toggle */
+    border-color: #6a0dad; /* Purple border */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.form-check-input:checked {
+    background-color: #4b0082; /* Darker purple when toggled on */
+    border-color: #4b0082; /* Darker purple border when toggled on */
+    box-shadow: 0px 0px 5px rgba(75, 0, 130, 0.5); /* Subtle glow effect */
+}
+
+.form-check-input:focus {
+    box-shadow: 0px 0px 5px rgba(106, 13, 173, 0.5); /* Purple focus outline */
+}
+
+/* Navbar link hover effect - Dark Mode */
+body.dark-mode .navbar .nav-link:hover {
+    color: #8a2be2 !important; /* Slightly brighter purple for hover */
+    background-color: #1a1a2b !important; /* Darker background on hover */
+    border-radius: 5px; /* Optional: Add rounded corners for hover effect */
+    padding: 5px 10px; /* Optional: Add padding for better hover visibility */
 }
