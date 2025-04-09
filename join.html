@@ -17,138 +17,7 @@
   <!-- Dark Mode -->
   <script src="script.js" defer></script>
 
-  <style>
-    body.dark-mode {
-      background-color: #121212;
-      color: white;
-    }
-
-    .navbar {
-      background-color: #7b2cbf !important;
-    }
-
-    .navbar .nav-link,
-    .navbar .navbar-brand {
-      color: black;
-    }
-
-    body.dark-mode .navbar .nav-link,
-    body.dark-mode .navbar .navbar-brand {
-      color: white;
-    }
-
-    .navbar .nav-link.active {
-      font-weight: bold;
-      color: #7b2cbf !important;
-    }
-
-    body.dark-mode .navbar .nav-link.active {
-      color: #7b2cbf !important;
-    }
-
-    body.dark-mode .section.bg-light {
-      background-color: #1e1e1e !important;
-    }
-
-    body.dark-mode .card-style {
-      background: rgba(44, 44, 44, 0.95);
-      color: white;
-    }
-
-    body.dark-mode .form-section {
-      background: url('https://www.transparenttextures.com/patterns/hexellence.png'), #3a1f53;
-      background-blend-mode: multiply;
-    }
-
-    body.dark-mode .form-section .form-container {
-      background-color: #2c2c2c;
-      color: white;
-    }
-
-    .hero-section {
-      background: linear-gradient(to right, #c084fc, #a855f7, #9333ea);
-      padding: 100px 0;
-      text-align: center;
-      color: white;
-    }
-
-    body.dark-mode .hero-section {
-      background: linear-gradient(to right, #6b21a8, #581c87, #3b0764);
-      color: white;
-    }
-
-    .hero-section h1 {
-      font-size: 3rem;
-      font-weight: bold;
-    }
-
-    .hero-section p {
-      font-size: 1.25rem;
-      max-width: 700px;
-      margin: 20px auto;
-    }
-
-    .section {
-      padding: 80px 0;
-    }
-
-    .card-style {
-      background: rgba(255, 255, 255, 0.85);
-      border: none;
-      border-radius: 20px;
-      padding: 40px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      text-align: center;
-      cursor: pointer;
-      height: 100%;
-    }
-
-    .card-style:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-      outline: 2px solid #7b2cbf;
-    }
-
-    body.dark-mode .card-style:hover {
-      outline: 2px solid #7b2cbf;
-    }
-
-    .card-style i {
-      font-size: 2rem;
-      color: #7b2cbf;
-      margin-bottom: 15px;
-    }
-
-    .form-control, .btn {
-      border-radius: 10px;
-    }
-
-    .btn-purple {
-      background-color: #7b2cbf;
-      color: white;
-    }
-
-    .btn-purple:hover {
-      background-color: #5a189a;
-    }
-
-    .form-section {
-      background: url('https://www.transparenttextures.com/patterns/hexellence.png'), #e9d5ff;
-      background-blend-mode: multiply;
-    }
-
-    .form-section .form-container {
-      background: white;
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    }
-
-    .form-section h2 {
-      font-weight: bold;
-    }
-  </style>
+  
 </head>
 <body>
 
@@ -167,7 +36,10 @@
           <li class="nav-item"><a class="nav-link" href="explore.html">Explore</a></li>
           <li class="nav-item"><a class="nav-link active fw-bold" href="join.html">Join us</a></li>
         </ul>
-        <button id="darkModeToggle" class="btn btn-purple ms-3">Dark Mode</button>
+        <div class="form-check form-switch ms-3">
+          <input class="form-check-input" type="checkbox" id="darkModeToggle">
+          <label class="form-check-label" for="darkModeToggle">Dark Mode</label>
+      </div>
       </div>
     </div>
   </nav>
@@ -241,30 +113,8 @@
       </div>
     </div>
   </section>
-
-  <script>
-    function scrollToForm() {
-      const formSection = document.getElementById("join-form");
-      if (formSection) {
-        formSection.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-
-    // Apply saved theme on load
-    window.addEventListener("DOMContentLoaded", () => {
-      if (localStorage.getItem("theme") === "dark") {
-        document.body.classList.add("dark-mode");
-      }
-    });
-
-    document.getElementById("darkModeToggle").addEventListener("click", function () {
-      document.body.classList.toggle("dark-mode");
-      if (document.body.classList.contains("dark-mode")) {
-        localStorage.setItem("theme", "dark");
-      } else {
-        localStorage.setItem("theme", "light");
-      }
-    });
-  </script>
+  <footer class="footer">
+    <p>© 2025 Credily. All Rights Reserved.</p>
+</footer>
 </body>
 </html>
