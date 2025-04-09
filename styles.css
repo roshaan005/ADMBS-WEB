@@ -216,7 +216,7 @@ body {
     
     display:flex;
     flex-direction: column;
-  
+
     align-items: center;
     padding: 80px 0;
     text-align: center;
@@ -229,11 +229,66 @@ body {
     margin-bottom: 5%;
 }
 
+.cont{
+    margin-bottom: 5%;
+}
 .hero h1 {
+    font-size: 4rem;
     font-size: 4rem;
     font-weight: bold;
    
 }    .masonry {
+    column-count: 4;
+    column-gap: 1rem;
+  }
+
+  .masonry .card {
+    break-inside: avoid;
+    margin-bottom: 1rem;
+    display: inline-block;
+    width: 100%;
+  }
+.head{
+    color:black;
+}
+  @media (max-width: 1200px) {
+    .masonry {
+      column-count: 3;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .masonry {
+      column-count: 2;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .masonry {
+      column-count: 1;
+    }
+  }
+  .txt2{
+    display:flex;
+    flex-direction: column;
+    margin-top: 8%;
+  
+   
+  }
+
+.phone{
+    height:80%;
+    width:80%;
+}
+.txt{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top:15%
+}
+   
+  .masonry {
     column-count: 4;
     column-gap: 1rem;
   }
