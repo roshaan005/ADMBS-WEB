@@ -25,6 +25,24 @@ body.dark-mode {
     color: #f4f4f4; /* Light text for contrast */
 }
 
+
+/* Make all text elements white in dark mode */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode span,
+body.dark-mode strong,
+body.dark-mode em {
+    color: white !important; /* Set all text to white */
+}
+
+/* Ensure links have a hover effect in dark mode */
+body.dark-mode a:hover {
+    color: #cccccc !important; /* Slightly darker white for hover */
+}
+
 body.dark-mode .section.bg-light {
     background-color: #1e1e1e !important;
 }
@@ -507,6 +525,12 @@ body {
 
 .feature-box:hover {
     transform: translateY(-5px);
+}
+
+/* Ensure text inside white boxes in Features section is black in dark mode */
+body.dark-mode .feature-box {
+    color: black !important; /* Set text color to black */
+    background-color: white !important; /* Ensure the background remains white */
 }
 
 /* Rounded box styles */
