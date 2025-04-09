@@ -943,9 +943,3 @@ body.dark-mode .form-section .form-container {
 }
 
 /* Navbar link hover effect - Dark Mode */
-body.dark-mode .navbar .nav-link:hover {
-    color: #8a2be2 !important; /* Slightly brighter purple for hover */
-    background-color: #1a1a2b !important; /* Darker background on hover */
-    border-radius: 5px; /* Optional: Add rounded corners for hover effect */
-    padding: 5px 10px; /* Optional: Add padding for better hover visibility */
-}
