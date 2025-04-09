@@ -201,8 +201,6 @@ body {
     rgba(147, 112, 219, 0.25) 40%,  /* medium purple */
     rgba(255, 255, 255, 0) 70%      /* fade to transparent */
   );
-  
-
     display:flex;
     justify-content: center;
     align-items: center;
