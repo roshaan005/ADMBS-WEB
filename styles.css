@@ -767,6 +767,20 @@ body.dark-mode .form-section .form-container {
     }
 }
 
+/* Glass card styling */
+.card.glass {
+    width: 50%;
+    max-width: 600px; /* Ensure it doesn't exceed a reasonable width */
+    margin: 2rem auto; /* Center the card with margin */
+    padding: 2rem;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.8); /* Glass effect */
+    backdrop-filter: blur(10px); 
+    color:#000000;/* Blur background for glass effect */
+}
+
 @media (max-width: 1200px) {
     .masonry {
         column-count: 3;
@@ -890,12 +904,170 @@ body.dark-mode .form-section .form-container {
     .features-page-hero img {
         max-height: 325px;
     }
+
+    /* Navbar adjustments */
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        margin-right: 1rem;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero h6 {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero .btn-purple {
+        width: 100%;
+        padding: 0.8rem;
+    }
+
+    /* Hero2 Section */
+    .hero2 {
+        padding: 2rem 1rem;
+    }
+
+    .hero2 .h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero2 .h5 {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .phone {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .phone img {
+        display: block;
+        max-width: 80%;
+        height: auto;
+    }
+
+    .txt, .txt2 {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .txt a, .txt2 a {
+        display: inline-block;
+        width: 100%;
+        padding: 0.8rem;
+    }
+
+    /* Team Section */
+    .image1, .image2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .name-card img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .name-card {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    /* Why People Believe in Us Section */
+    .card {
+        margin: 1rem auto;
+        width: 90%;
+    }
+.dis{
+  display:none;
+}
+    .card i {
+        font-size: 1.5rem;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+    }
+
+    .card-subtitle p {
+        font-size: 0.9rem;
+    }
+
+    /* Subscription Section */
+    .glass {
+        width: 90%;
+        padding: 2rem 1rem;
+    }
+
+    .glass h5, .glass h6 {
+        font-size: 1rem;
+    }
+
+    .glass .form-control, .glass .btn-purple {
+        width: 100%;
+    }
+
+    .card.glass {
+        width: 90%; /* Make it take most of the screen width */
+        padding: 1.5rem; /* Reduce padding for smaller screens */
+      
+    }
+
+    .card.glass h5 {
+        font-size: 1.25rem; /* Adjust heading size */
+    }
+
+    .card.glass h6 {
+        font-size: 1rem; /* Adjust subheading size */
+    }
+
+    .card.glass .form-control {
+        width: 100%; /* Make the input field full width */
+        max-width: 100%; /* Ensure it doesn't exceed the card width */
+        font-size: small;
+    }
+
+    .card.glass .btn-purple {
+        width: 100%; /* Make the button full width */
+    }
+
+    .txt2 {
+        display: flex; /* Ensure the section is displayed */
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center-align content */
+    }
+
+    .txt2 a {
+        display: inline-block; /* Ensure the button is visible */
+        width: 100%; /* Make the button full-width */
+        padding: 0.8rem; /* Adjust padding for better usability */
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
 }
 
 @media (max-width: 576px) {
-    .masonry {
-        column-count: 1;
-    }
+  
     
     .container {
         padding-left: 20px;
@@ -980,6 +1152,71 @@ body.dark-mode .form-section .form-container {
     .chat-bubble .bubble {
         font-size: 0.85rem;
         padding: 0.4rem 0.8rem;
+    }
+
+    /* Further adjustments for very small screens */
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero h6 {
+        font-size: 0.9rem;
+    }
+
+    .hero2 .h2 {
+        font-size: 1.25rem;
+    }
+
+    .hero2 .h5 {
+        font-size: 0.9rem;
+    }
+
+    .phone img {
+        max-width: 100%;
+    }
+    .dis{
+      display:none;
+    }
+
+    .txt .h2, .txt2 .h2 {
+        font-size: 1rem;
+    }
+
+    .card i {
+        font-size: 1.25rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-subtitle p {
+        font-size: 0.8rem;
+    }
+
+    .glass h5, .glass h6 {
+        font-size: 0.9rem;
+    }
+
+    .card.glass {
+        padding: 1rem; /* Further reduce padding for very small screens */
+    }
+   
+    .card.glass h5 {
+        font-size: 1rem; /* Further adjust heading size */
+    }
+
+    .card.glass h6 {
+        font-size: 0.9rem; /* Further adjust subheading size */
+    }
+
+    .card.glass .form-control {
+        padding: 0.6rem; /* Adjust input padding */
+    }
+
+    .card.glass .btn-purple {
+        padding: 0.6rem; /* Adjust button padding */
+        font-size: 0.9rem; /* Adjust button font size */
     }
 }
 
