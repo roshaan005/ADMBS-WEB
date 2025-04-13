@@ -19,3 +19,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Existing dark mode code stays here
+
+    // Add the sticky-top class to all navbars
+    const navbars = document.querySelectorAll('.navbar');
+    navbars.forEach(navbar => {
+        if (!navbar.classList.contains('sticky-top')) {
+            navbar.classList.add('sticky-top');
+        }
+    });
+});
