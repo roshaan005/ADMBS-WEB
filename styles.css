@@ -1,46 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-/* Define the purple color theme */
 :root {
-    --primary-color: #6a0dad;  /* Main purple color */
-    --secondary-color: #8a2be2; /* Bright purple */
-    --light-purple: #d8b9ff; /* Light purple shade */
-    --dark-purple: #4b0082;  /* Deep purple */
-    --white: #ffffff;        /* Light background */
-    --gray: #f4f0fa;         /* Light gray */
-    --text-color: #333;      /* Default text color */
+    --primary-color: #6a0dad;
+    --secondary-color: #8a2be2;
+    --light-purple: #d8b9ff;
+    --dark-purple: #4b0082;
+    --white: #ffffff;
+    --gray: #f4f0fa;
+    --text-color: #333;
 }
 
-/* Dark mode theme */
 body.dark-mode {
-    --primary-color: #4b0082;  /* Darker purple */
-    --secondary-color: #6a0dad; /* Adjusted purple */
-    --light-purple: #8a2be2; /* Slightly brighter purple */
-    --dark-purple: #e9b3fb;  /* Deepest purple */
-    --white: #ffffff;        /* Dark background */
-    --gray: #494343;         /* Darker gray */
-    --text-color: #f4f4f4;   /* Light text color */
-    background-color: #2a1e2f; /* Match the footer's dark mode background */
-    color: #f4f4f4; /* Light text for contrast */
+    --primary-color: #4b0082;
+    --secondary-color: #6a0dad;
+    --light-purple: #8a2be2;
+    --dark-purple: #e9b3fb;
+    --white: #ffffff;
+    --gray: #494343;
+    --text-color: #f4f4f4;
+    background-color: #2a1e2f;
+    color: #f4f4f4;
 }
 
-/* Default (normal mode) styles for h1 */
 h1 {
-    color: black; /* Black text in normal mode */
+    color: black;
 }
 
-/* Default (normal mode) styles for h6 */
 h6 {
-    color: black; /* Black text in normal mode */
+    color: black;
 }
 
-/* Dark mode styles for h1 */
 body.dark-mode h1 {
-    color: white !important; /* White text in dark mode */
+    color: white !important;
 }
 
-/* Make all text elements white in dark mode */
 body.dark-mode h1,
 body.dark-mode h2,
 body.dark-mode h3,
@@ -49,14 +43,12 @@ body.dark-mode h6,
 body.dark-mode span,
 body.dark-mode strong,
 body.dark-mode em {
-    color: white !important; /* Set all text to white */
+    color: white !important;
 }
 
-/* Ensure links have a hover effect in dark mode */
 body.dark-mode a:hover {
-    color: #cccccc !important; /* Slightly darker white for hover */
+    color: #cccccc !important;
 }
-
 
 body.dark-mode .section.bg-light {
     background-color: #1e1e1e !important;
@@ -68,37 +60,8 @@ body.dark-mode .card-style {
 }
 
 body.dark-mode .form-section {
-    background-color: #2a1e2f; /* Change background color to #2a1e2f */
-    background-blend-mode: normal; /* Ensure no blending with patterns */
-}
-
-body.dark-mode .form-section .form-container {
-    background-color: #000000; /* Slightly lighter color for the form container */
-    color: white; /* Ensure text is readable */
-}
-
-body.dark-mode .form-section h2,
-body.dark-mode .form-section p {
-    color: #ffffff; /* Ensure headings and text are white */
-}
-
-body.dark-mode .form-control {
-    background-color: #3a2a3f; /* Match the form container */
-    color: white; /* Ensure input text is readable */
-    border: 1px solid #4b3b4f; /* Add a subtle border */
-}
-
-body.dark-mode .form-control::placeholder {
-    color: #d1c1d1; /* Light gray for placeholders */
-}
-
-body.dark-mode .btn-purple {
-    background-color: #6f0b88; /* Darker purple for the button */
-    color: white; /* White text */
-}
-
-body.dark-mode .btn-purple:hover {
-    background-color: #b300ff; /* Slightly brighter purple on hover */
+    background-color: #2a1e2f; 
+    background-blend-mode: normal; 
 }
 
 body.dark-mode .form-section .form-container {
@@ -106,364 +69,230 @@ body.dark-mode .form-section .form-container {
     color: white;
 }
 
-/* Dark mode styles */
+body.dark-mode .form-section h2,
+body.dark-mode .form-section p {
+    color: #ffffff;
+}
+
+body.dark-mode .form-control {
+    background-color: #3a2a3f;
+    color: white;
+    border: 1px solid #4b3b4f;
+}
+
+body.dark-mode .form-control::placeholder {
+    color: #d1c1d1;
+}
+
+body.dark-mode .btn-purple {
+    background-color: #6f0b88;
+    color: white;
+}
+
+body.dark-mode .btn-purple:hover {
+    background-color: #b300ff;
+}
+
 .navbar.dark-mode {
-    background-color: #2a1e2f; /* Match the footer's dark mode background */
-    color: #f4f4f4; /* Light text */
+    background-color: #2a1e2f;
+    color: #f4f4f4;
 }
 
 .footer.dark-mode {
-    background-color: #2a1e2f; /* Darker background for the footer */
-    color: #f4f4f4; /* Light text for contrast */
+    background-color: #2a1e2f;
+    color: #f4f4f4;
 }
 
 .hero.dark-mode {
-    background-color: #2a2a3d; /* Darker hero section */
-    color: #f4f4f4; /* Light text */
+    background-color: #2a2a3d;
+    color: #f4f4f4;
 }
 
 .rounded-box.dark-mode {
-    background-color: #2a2a3d; /* Darker value box background */
-    color: #f4f4f4; /* Light text */
-    border: 1px solid rgba(244, 244, 244, 0.2); /* Subtle border */
+    background-color: #2a2a3d;
+    color: #f4f4f4;
+    border: 1px solid rgba(244, 244, 244, 0.2);
 }
 
 .rounded-box.dark-mode:hover {
-    border: 1px solid var(--light-purple); /* Purple border on hover */
-    box-shadow: 0px 2px 8px rgba(138, 43, 226, 0.2); /* Subtle purple shadow */
+    border: 1px solid var(--light-purple);
+    box-shadow: 0px 2px 8px rgba(138, 43, 226, 0.2);
 }
 
 .icon-box.dark-mode {
-    background-color: transparent; /* Transparent icon background */
-    color: var(--light-purple); /* Purple icon color */
+    background-color: transparent;
+    color: var(--light-purple);
 }
 
 .btn-purple.dark-mode {
-    background-color: var(--dark-purple); /* Darker button background */
-    color: #f4f4f4; /* Light text */
+    background-color: var(--dark-purple);
+    color: #f4f4f4;
 }
 
 .btn-purple.dark-mode:hover {
-    background-color: var(--primary-color); /* Highlighted button background */
-    color: #ffffff; /* White text */
+    background-color: var(--primary-color);
+    color: #ffffff;
 }
 
-/* Feature Title - Dark Mode */
 .feature-title.dark-mode {
-    color: #8110d2; /* Bright white for better visibility */
+    color: #8110d2;
 }
 
-/* Card Title - Dark Mode */
 .card-title.dark-mode {
-    color: #ffffff; /* Bright white for better visibility */
+    color: #ffffff;
 }
 
-/* Feature Description - Dark Mode */
 .feature-description.dark-mode {
-    color: #d1d1d1; /* Light gray for better readability */
+    color: #d1d1d1;
 }
 
-/* Exclude picture div in Contact Us from dark mode */
 .contact-us-section .picture-div {
-    background-color: #ffffff !important; /* Keep the background white */
-    color: inherit; /* Ensure text color remains unchanged */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for better visibility */
-    z-index: 1; /* Ensure it appears above other elements */
+    background-color: #ffffff !important;
+    color: inherit;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 }
 
-/* Ensure picture div remains unaffected in dark mode */
 body.dark-mode .contact-us-section .picture-div {
-    background-color: #ffffff !important; /* Force white background in dark mode */
-    color: inherit; /* Keep text color consistent */
+    background-color: #ffffff !important;
+    color: inherit;
 }
 
-/* Ensure picture div in Contact Us has rounded corners with shadow */
-.contact-us-section .picture-div {
-    background-color: #ffffff !important; /* Keep the background white */
-    color: inherit; /* Ensure text color remains unchanged */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    z-index: 1; /* Ensure it appears above other elements */
-    border-radius: 20px; /* Rounded corners */
-    overflow: hidden; /* Ensure content stays within the shape */
-    width: 200px; /* Set a fixed width */
-    height: 200px; /* Set a fixed height */
-    display: flex; /* Center content inside */
-    align-items: center; /* Center content vertically */
-    justify-content: center; /* Center content horizontally */
-    margin: 0 auto; /* Center the div horizontally */
-}
-
-/* Ensure Contact Us picture is larger */
-.contact-us-section .picture-div img {
-    width: 100%; /* Make the image responsive */
-    max-width: 500px; /* Increase the maximum width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 20px; /* Match the rounded corners of other images */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
-    margin: 0 auto; /* Center the image */
-}
-
-/* Contact Us image styling */
 .contact-us-section .contact-img {
-    width: 100%; /* Make the image responsive */
-    max-width: 600px; /* Set a larger maximum width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 20px; /* Add rounded corners */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-    margin: 0 auto; /* Center the image */
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
 }
 
-/* Purple color for icons in Contact Us */
 .contact-us-section .text-purple {
-    color: #6a0dad !important; /* Purple color for icons */
+    color: #6a0dad !important;
 }
 
-/* Purple color for email and telephone icons in Contact Us */
 .contact-us-section .bi-envelope-fill,
 .contact-us-section .bi-telephone-fill {
-    color: #6a0dad; /* Purple color */
+    color: #6a0dad;
 }
 
-/* General styles */
 body {
     background-color: var(--gray);
     color: #333;
     font-family: 'Inter', sans-serif;
 }
 
-/* Navbar */
 .navbar {
     background-color: var(--primary-color);
 }
 
 .navbar-brand {
-    font-family: 'Handsome', cursive; /* Use Handsome font */
-    font-size: 2.5rem; /* Adjust font size as needed */
+    font-family: 'Handsome', cursive;
+    font-size: 2.5rem;
     color: var(--white) !important;
     font-weight: bold;
 }
 
-/* Navbar link styles */
 .nav-link {
-    color: var(--white) !important; /* Default text color */
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    color: var(--white) !important;
+    transition: color 0.3s ease;
 }
 
-/* Navbar link hover effect */
 .nav-link:hover {
-    color: #000000 !important; /* Darker gray text on hover */
+    color: #000000 !important;
 }
 
 .navbar-toggler {
-    border-color: var(--white); /* White border for the toggler */
+    border-color: var(--white);
 }
 
-/* Navbar toggler icon (three lines) styles */
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-    background-size: contain; /* Ensure the icon fits properly */
-    background-repeat: no-repeat; /* Prevent repeating */
-    background-position: center; /* Center the icon */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-/* Hero Section */
 .hero {
   background: radial-gradient(
     circle at center, 
-    rgba(255, 105, 180, 0.25) 0%,   /* soft hot pink */
-    rgba(147, 112, 219, 0.25) 40%,  /* medium purple */
-    rgba(255, 255, 255, 0) 70%      /* fade to transparent */
+    rgba(255, 105, 180, 0.25) 0%,
+    rgba(147, 112, 219, 0.25) 40%,
+    rgba(255, 255, 255, 0) 70%
   );
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    padding: 80px 0;
-    text-align: center;
-    height:90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding: 80px 0;
+  text-align: center;
+  height: 90vh;
 }
 
-.hero2{
-    
-    display:flex;
+.hero2 {
+    display: flex;
     flex-direction: column;
-
     align-items: center;
     padding: 80px 0;
     text-align: center;
-    height:100vh;
-
-   
+    height: 100vh;
 }
 
-.cont{
+.cont {
     margin-bottom: 5%;
 }
 
-.cont{
-    margin-bottom: 5%;
-}
 .hero h1 {
     font-size: 4rem;
-    font-size: 4rem;
     font-weight: bold;
-   
-}    .masonry {
+}
+
+.masonry {
     column-count: 4;
     column-gap: 1rem;
-  }
+}
 
-  .masonry .card {
+.masonry .card {
     break-inside: avoid;
     margin-bottom: 1rem;
     display: inline-block;
     width: 100%;
-  }
-.head{
-    color:black;
 }
-  @media (max-width: 1200px) {
-    .masonry {
-      column-count: 3;
-    }
-  }
 
-  @media (max-width: 768px) {
-    .masonry {
-      column-count: 2;
-    }
-  }
+.head {
+    color: black;
+}
 
-  @media (max-width: 576px) {
-    .masonry {
-      column-count: 1;
-    }
-  }
-  .txt2{
-    display:flex;
+.txt2 {
+    display: flex;
     flex-direction: column;
     margin-top: 8%;
-  
-   
-  }
-
-.phone{
-    height:80%;
-    width:80%;
 }
-.txt{
-    display:flex;
+
+.phone {
+    height: 80%;
+    width: 80%;
+}
+
+.txt {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top:15%
+    margin-top: 15%;
 }
-   
-  .masonry {
-    column-count: 4;
-    column-gap: 1rem;
-  }
 
-  .masonry .card {
-    break-inside: avoid;
-    margin-bottom: 1rem;
-    display: inline-block;
-    width: 100%;
-  }
-.head{
-    color:black;
-}
-  @media (max-width: 1200px) {
-    .masonry {
-      column-count: 3;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .masonry {
-      column-count: 2;
-    }
-  }
-
-  @media (max-width: 576px) {
-    .masonry {
-      column-count: 1;
-    }
-  }
-  .txt2{
-    display:flex;
-    flex-direction: column;
-    margin-top: 8%;
-  
-   
-  }
-
-.phone{
-    height:80%;
-    width:80%;
-}
-.txt{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top:15%
-}
-   
-  .masonry {
-    column-count: 4;
-    column-gap: 1rem;
-  }
-
-  .masonry .card {
-    break-inside: avoid;
-    margin-bottom: 1rem;
-    display: inline-block;
-    width: 100%;
-  }
-.head{
-    color:black;
-}
-  @media (max-width: 1200px) {
-    .masonry {
-      column-count: 3;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .masonry {
-      column-count: 2;
-    }
-  }
-
-  @media (max-width: 576px) {
-    .masonry {
-      column-count: 1;
-    }
-  }
-  .txt2{
-    display:flex;
-    flex-direction: column;
-    margin-top: 8%;
-  
-   
-  }
-
-.phone{
-    height:80%;
-    width:80%;
-}
-.txt{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top:15%
-}
-/* Buttons */
 .btn-purple {
-    background-color: var(--secondary-color); /* Default button color */
-    color: var(--white); /* White text */
+    background-color: var(--secondary-color);
+    color: var(--white);
     font-weight: bold;
     border-radius: 25px;
     padding: 12px 24px;
@@ -471,53 +300,17 @@ body {
 }
 
 .btn-purple:hover {
-    background-color: #4b0082; /* Deep purple on hover */
-    color: var(--white); /* Keep text white */
-    box-shadow: 0px 4px 10px rgba(75, 0, 130, 0.3); /* Subtle shadow */
+    background-color: #4b0082;
+    color: var(--white);
+    box-shadow: 0px 4px 10px rgba(75, 0, 130, 0.3);
 }
-.image1{
-  
-  width:35%;
-    
+
+.image1 {
+    width: 35%;
 }
-.image2{
-     width:60%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 5%;
-}
-.image1{
-  
-  width:35%;
-    
-}
-.image2{
-     width:60%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 5%;
-}
-.image1{
-  
-  width:35%;
-    
-}
-.image2{
-     width:60%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 5%;
-}
-.image1{
-  
-  width:35%;
-    
-}
-.image2{
-     width:60%;
+
+.image2 {
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -525,12 +318,12 @@ body {
 }
 
 .profile-img {
-    
     width: auto;
     display: block;
     margin: 0 auto;
     line-height: 0;
-  }
+}
+
 .feature-box {
     background: var(--white);
     color: var(--text-color);
@@ -544,51 +337,46 @@ body {
     transform: translateY(-5px);
 }
 
-/* Ensure text inside white boxes in Features section is black in dark mode */
 body.dark-mode .feature-box {
-    color: black !important; /* Set text color to black */
-    background-color: white !important; /* Ensure the background remains white */
+    color: black !important;
+    background-color: white !important;
 }
 
-/* Rounded box styles */
 .rounded-box {
-    background-color: #ffffff; /* White background */
-    color: #333; /* Dark text for contrast */
-    border-radius: 15px; /* Rounded corners */
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 15px;
     padding: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Updated shadow for visibility */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     position: relative;
-    height: 100%; /* Ensure all boxes are the same height */
+    height: 100%;
     display: flex;
-    flex-direction: column; /* Stack content vertically */
-    justify-content: flex-start; /* Align content at the top */
-    align-items: center; /* Center content horizontally */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
-    
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover effect for rounded boxes */
 .rounded-box:hover {
-    transform: translateY(-10px); /* Move the box slightly upward */
-    border: 1px solid var(--primary-color); /* Purple outline */
-    box-shadow: 0px 2px 8px rgba(106, 13, 173, 0.1); /* Thinner purple shadow */
+    transform: translateY(-10px);
+    border: 1px solid var(--primary-color);
+    box-shadow: 0px 2px 8px rgba(106, 13, 173, 0.1);
 }
 
-/* Icon box styles */
 .icon-box {
-    font-size: 3.5rem; /* Updated icon size */
+    font-size: 3.5rem;
     margin-bottom: 15px;
-    background-color: transparent; /* Updated background color */
-    color: #ffffff; /* Updated icon color */
-    border-radius: 50%; /* Circular icon box */
-    width: 100px; /* Updated width */
-    height: 100px; /* Updated height */
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Updated shadow for icon box */
-    transition: transform 0.3s ease; /* Smooth hover effect for icon */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
 .icon-box .bi-eye {
@@ -615,38 +403,32 @@ body.dark-mode .feature-box {
     color: #17a2b8;
 }
 
-/* Hover effect for icon box */
 .rounded-box:hover .icon-box {
-    transform: scale(1.1); /* Slightly enlarge the icon */
+    transform: scale(1.1);
 }
 
-/* Footer */
 .footer {
     background-color: var(--primary-color);
     color: var(--white);
     text-align: center;
     padding: 20px;
     margin-bottom: 0;
-    width:100%
+    width: 100%;
 }
-.glass{
-    background: rgba( 255, 255, 255, 0.25 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 4px );
--webkit-backdrop-filter: blur( 4px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
 
+.glass {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
-/* Footer - Dark Mode */
+
 body.dark-mode .footer {
-    background-color: #2a1e2f !important; /* Darker background for the footer */
-    color: #f4f4f4 !important; /* Light text for contrast */
+    background-color: #2a1e2f !important;
+    color: #f4f4f4 !important;
 }
-
-
-
-/* Feature Page styles*/
 
 .features-page-hero {
     padding: 0;
@@ -681,6 +463,7 @@ body.dark-mode .footer {
 .feature-description {
     text-align: left;
     margin-bottom: 1.5rem;
+    font-size: 20px;
 }
 
 .feature-icon {
@@ -699,15 +482,10 @@ body.dark-mode .footer {
     text-align: left;
 }
 
-.feature-description {
-    font-size: 20px;
-}
-
 .card-title {
     font-size: 24px;
 }
 
-/* Feature link styles */
 .feature-link {
     display: inline-block;
     margin-top: 1rem;
@@ -734,7 +512,6 @@ body.dark-mode .footer {
     left: 1.25rem;
 }
 
-/* Value Box */
 .value-box {
     width: 120px;
     height: 120px;
@@ -749,7 +526,6 @@ body.dark-mode .footer {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Value Title */
 .value-title {
     font-size: 1.2rem;
     font-weight: bold;
@@ -757,7 +533,6 @@ body.dark-mode .footer {
     color: #333;
 }
 
-/* Value Text */
 .value-text {
     font-size: 0.9rem;
     color: #555;
@@ -766,7 +541,6 @@ body.dark-mode .footer {
     flex-grow: 1;
 }
 
-/* Empathy Icon */
 .empathy-icon {
     width: 90px;
     height: 90px;
@@ -776,13 +550,11 @@ body.dark-mode .footer {
     filter: brightness(0) saturate(100%) invert(35%) sepia(100%) saturate(500%) hue-rotate(325deg) brightness(110%) contrast(105%);
 }
 
-/* Our Story Section */
 .our-story-section {
     background-color: #f3e5f5;
     padding: 50px 0;
 }
 
-/* Our Values Section */
 .our-values-section {
     background-color: #e1bee7;
     padding: 50px 0;
@@ -871,137 +643,207 @@ body.dark-mode .form-section .form-container {
     background-color: #2a1e2f;
     color: white;
 }
-
   
-  .hero-illustration {
+.hero-illustration {
     max-width: 200px;
-  }
+    animation: float 3s ease-in-out infinite;
+}
+
+.floating-chat-section {
+    background: var(--bubble-color);
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
   
-/* =============================================
-     FLOATING CHAT SECTION STYLES
-     ============================================= */
-     .floating-chat-section {
-        background: var(--bubble-color);
-        min-height: 100vh;
-        position: relative;
-        overflow: hidden;
-        margin-bottom: 0;
-        padding-bottom: 0;
-      }
-      
-      .floating-chat-section .container {
-        z-index: 2;
-        background-color: transparent;
-      }
-      
-      .floating-bubbles {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-      }
-      
-      .chat-bubble {
-        position: absolute;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        animation: float 10s infinite ease-in-out;
-      }
-      
-      .chat-bubble .avatar {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 2px solid white;
-      }
-      
-      .chat-bubble .bubble {
-        background: var(--white);
-        color: var(--text-color);
-        padding: 0.5rem 1rem;
-        border-radius: 20px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        font-size: 0.9rem;
-        position: relative;
-      }
-      
-      .chat-bubble .time {
-        font-size: 0.75rem;
-        color: gray;
-        margin-left: 10px;
-      }
-      
-      /* =============================================
-         FLOATING AND ANIMATION EFFECTS
-         ============================================= */
-      /* Floating elements */
-      .floating-icon {
-        position: absolute;
-        font-size: 24px;
-        width: 30px;
-        height: 30px;
-        z-index: 1;
-        animation: float 6s ease-in-out infinite;
-        opacity: 0.8;
-        pointer-events: none;
-      }
-      .hero-illustration {
-        animation: float 3s ease-in-out infinite;
-      }
-      
-      @keyframes float {
-        0%   { transform: translateY(0px); }
-        50%  { transform: translateY(-10px); }
-        100% { transform: translateY(0px); }
-      }
-       .bubble{
-        color: var(--white);
-       }
-       .card.hot-topic {
-        background-color: var(--light-purple);
-        color: var(--dark-purple);
-        border: none;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
-      
-      .card.hot-topic:hover {
-        transform: scale(1.02);
-        box-shadow: 0 4px 12px rgba(156, 39, 176, 0.25);
-      }
-/* Card animations and hover effects */
-  .card {
+.floating-chat-section .container {
+    z-index: 2;
+    background-color: transparent;
+}
+  
+.floating-bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+  
+.chat-bubble {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    animation: float 10s infinite ease-in-out;
+}
+  
+.chat-bubble .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+}
+  
+.chat-bubble .bubble {
+    background: var(--white);
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem;
+    position: relative;
+}
+  
+.chat-bubble .time {
+    font-size: 0.75rem;
+    color: gray;
+    margin-left: 10px;
+}
+
+.floating-icon {
+    position: absolute;
+    font-size: 24px;
+    width: 30px;
+    height: 30px;
+    z-index: 1;
+    animation: float 6s ease-in-out infinite;
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+@keyframes float {
+    0%   { transform: translateY(0px); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.bubble {
+    color: var(--white);
+}
+
+.card.hot-topic {
+    background-color: var(--light-purple);
+    color: var(--dark-purple);
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+  
+.card.hot-topic:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(156, 39, 176, 0.25);
+}
+
+.card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     animation: fadeUp 0.6s ease forwards;
     opacity: 0;
-  }
+}
   
-  .card:hover {
+.card:hover {
     transform: translateY(-10px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-  }
+}
   
-  .card-img-top {
+.card-img-top {
     transition: transform 0.5s ease;
-  }
+}
   
-  .card:hover .card-img-top {
+.card:hover .card-img-top {
     transform: scale(1.05);
-  }
-  @keyframes fadeUp {
+}
+
+@keyframes fadeUp {
     0% {
-      opacity: 0;
-      transform: translateY(30px);
+        opacity: 0;
+        transform: translateY(30px);
     }
     100% {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
+}
+
+/* Glass card styling */
+.card.glass {
+    width: 50%;
+    max-width: 600px; /* Ensure it doesn't exceed a reasonable width */
+    margin: 2rem auto; /* Center the card with margin */
+    padding: 2rem;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.8); /* Glass effect */
+    backdrop-filter: blur(10px); 
+    color:#000000;/* Blur background for glass effect */
+}
+
+@media (max-width: 1200px) {
+    .masonry {
+        column-count: 3;
+    }
+    
+    .floating-bubbles .chat-bubble {
+        position: static;
+        margin: 1rem auto;
+        justify-content: center;
+    }
       
+    .form-color {
+        margin-bottom: 0.5rem;
+    }
+      
+    .floating-bubbles {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+    
+    .floating-chat-section {
+        height: auto;
+        padding: 4rem 1rem;
+        text-align: center;
+    }
+    
+    .floating-chat-section .container h2 {
+        font-size: 1.25rem;
+    }
+    
+    .chat-bubble img.avatar {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .chat-bubble .bubble {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .chat-bubble {
+        display: flex !important;
+        transform: scale(0.8) !important;
+        position: static !important;
+        top: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+        right: auto !important;
+        margin: 1rem auto !important;
+    }
+    
+    .floating-bubbles {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+    }
+}
 
 @media (max-width: 991px) {
     .features-page-hero img {
@@ -1009,7 +851,23 @@ body.dark-mode .form-section .form-container {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+    .masonry {
+        column-count: 2;
+    }
+    
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .feature-box {
+        margin-bottom: 20px;
+    }
+    
     .feature-title {
         font-size: 23px;
     }
@@ -1046,9 +904,171 @@ body.dark-mode .form-section .form-container {
     .features-page-hero img {
         max-height: 325px;
     }
+
+    /* Navbar adjustments */
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        margin-right: 1rem;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero h6 {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero .btn-purple {
+        width: 100%;
+        padding: 0.8rem;
+    }
+
+    /* Hero2 Section */
+    .hero2 {
+        padding: 2rem 1rem;
+    }
+
+    .hero2 .h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero2 .h5 {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .phone {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .phone img {
+        display: block;
+        max-width: 80%;
+        height: auto;
+    }
+
+    .txt, .txt2 {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .txt a, .txt2 a {
+        display: inline-block;
+        width: 100%;
+        padding: 0.8rem;
+    }
+
+    /* Team Section */
+    .image1, .image2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .name-card img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .name-card {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    /* Why People Believe in Us Section */
+    .card {
+        margin: 1rem auto;
+        width: 90%;
+    }
+.dis{
+  display:none;
+}
+    .card i {
+        font-size: 1.5rem;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+    }
+
+    .card-subtitle p {
+        font-size: 0.9rem;
+    }
+
+    /* Subscription Section */
+    .glass {
+        width: 90%;
+        padding: 2rem 1rem;
+    }
+
+    .glass h5, .glass h6 {
+        font-size: 1rem;
+    }
+
+    .glass .form-control, .glass .btn-purple {
+        width: 100%;
+    }
+
+    .card.glass {
+        width: 90%; /* Make it take most of the screen width */
+        padding: 1.5rem; /* Reduce padding for smaller screens */
+      
+    }
+
+    .card.glass h5 {
+        font-size: 1.25rem; /* Adjust heading size */
+    }
+
+    .card.glass h6 {
+        font-size: 1rem; /* Adjust subheading size */
+    }
+
+    .card.glass .form-control {
+        width: 100%; /* Make the input field full width */
+        max-width: 100%; /* Ensure it doesn't exceed the card width */
+        font-size: small;
+    }
+
+    .card.glass .btn-purple {
+        width: 100%; /* Make the button full width */
+    }
+
+    .txt2 {
+        display: flex; /* Ensure the section is displayed */
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center-align content */
+    }
+
+    .txt2 a {
+        display: inline-block; /* Ensure the button is visible */
+        width: 100%; /* Make the button full-width */
+        padding: 0.8rem; /* Adjust padding for better usability */
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
 }
 
 @media (max-width: 576px) {
+  
+    
     .container {
         padding-left: 20px;
         padding-right: 20px;
@@ -1072,99 +1092,39 @@ body.dark-mode .form-section .form-container {
     .features-page-hero img {
         max-height: 250px;
     }
+    
     .floating-chat-section {
         min-height: auto;
         padding: 3rem 0;
-      }
+    }
       
-      /* Hide all chat bubbles by default on smallest screens */
-      .chat-bubble {
+    .chat-bubble {
         display: none;
-      }
+    }
       
-      /* Only show selected chat bubbles on small screens */
-      .chat-bubble:nth-child(1),
-      .chat-bubble:nth-child(4) {
+    .chat-bubble:nth-child(1),
+    .chat-bubble:nth-child(4) {
         display: flex;
         transform: scale(0.8);
-      }
+    }
       
-      .chat-bubble:nth-child(1) {
+    .chat-bubble:nth-child(1) {
         top: 5%;
         left: 5%;
-      }
+    }
       
-      .chat-bubble:nth-child(4) {
+    .chat-bubble:nth-child(4) {
         bottom: 5%;
         right: 5%;
-      }
-      
-      /* Floating bubbles adjustments */
-      .floating-bubbles .chat-bubble {
-        position: static;
-        margin: 1rem auto;
-        justify-content: center;
-      }
-      
-      .floating-bubbles {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 1rem;
-        margin-top: 2rem;
-      }
-      
-      .floating-chat-section {
-        height: auto;
-        padding: 4rem 1rem;
-        text-align: center;
-      }
-      
-      .floating-chat-section .container h2 {
-        font-size: 1.25rem;
-      }
-      
-      .chat-bubble img.avatar {
-        width: 36px;
-        height: 36px;
-      }
-      
-      .chat-bubble .bubble {
-        font-size: 0.85rem;
-        padding: 0.4rem 0.8rem;
-      }
-      
-}
-/* Responsive Design */
-@media (max-width: 768px) {
-    .navbar-brand {
-        font-size: 1.5rem;
     }
-
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .feature-box {
-        margin-bottom: 20px;
-    }
-
-}  
-@media (max-width:1200px) {
-    /* Show all chat bubbles in vertical layout */
+      
     .floating-bubbles .chat-bubble {
         position: static;
         margin: 1rem auto;
         justify-content: center;
-      }
+    }
       
-      .form-color {
-        margin-bottom: 0.5rem;
-      }
-      
-      .floating-bubbles {
+    .floating-bubbles {
         position: relative;
         display: flex;
         flex-direction: column;
@@ -1172,49 +1132,93 @@ body.dark-mode .form-section .form-container {
         flex-wrap: wrap;
         gap: 1rem;
         margin-top: 2rem;
-      }
-    
-      .floating-chat-section {
+    }
+      
+    .floating-chat-section {
         height: auto;
         padding: 4rem 1rem;
         text-align: center;
-      }
-    
-      .floating-chat-section .container h2 {
+    }
+      
+    .floating-chat-section .container h2 {
         font-size: 1.25rem;
-      }
-    
-      .chat-bubble img.avatar {
+    }
+      
+    .chat-bubble img.avatar {
         width: 36px;
         height: 36px;
-      }
-    
-      .chat-bubble .bubble {
+    }
+      
+    .chat-bubble .bubble {
         font-size: 0.85rem;
         padding: 0.4rem 0.8rem;
-      }
-  /* Show all chat bubbles in vertical layout */
-  .chat-bubble {
-    display: flex !important;
-    transform: scale(0.8) !important;
-    position: static !important; /* Override the inline positioning */
-    top: auto !important;        /* Override the inline top property */
-    bottom: auto !important;     /* Override the inline bottom property */
-    left: auto !important;       /* Override the inline left property */
-    right: auto !important;      /* Override the inline right property */
-    margin: 1rem auto !important; /* Add vertical spacing between bubbles */
-  }
-  
-  /* Force vertical layout container */
-  .floating-bubbles {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    width: 100% !important;
-  }
-  }
+    }
 
+    /* Further adjustments for very small screens */
+    .hero h1 {
+        font-size: 1.8rem;
+    }
 
+    .hero h6 {
+        font-size: 0.9rem;
+    }
+
+    .hero2 .h2 {
+        font-size: 1.25rem;
+    }
+
+    .hero2 .h5 {
+        font-size: 0.9rem;
+    }
+
+    .phone img {
+        max-width: 100%;
+    }
+    .dis{
+      display:none;
+    }
+
+    .txt .h2, .txt2 .h2 {
+        font-size: 1rem;
+    }
+
+    .card i {
+        font-size: 1.25rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-subtitle p {
+        font-size: 0.8rem;
+    }
+
+    .glass h5, .glass h6 {
+        font-size: 0.9rem;
+    }
+
+    .card.glass {
+        padding: 1rem; /* Further reduce padding for very small screens */
+    }
+   
+    .card.glass h5 {
+        font-size: 1rem; /* Further adjust heading size */
+    }
+
+    .card.glass h6 {
+        font-size: 0.9rem; /* Further adjust subheading size */
+    }
+
+    .card.glass .form-control {
+        padding: 0.6rem; /* Adjust input padding */
+    }
+
+    .card.glass .btn-purple {
+        padding: 0.6rem; /* Adjust button padding */
+        font-size: 0.9rem; /* Adjust button font size */
+    }
+}
 
 @font-face {
     font-family: 'Handsome';
@@ -1225,20 +1229,18 @@ body.dark-mode .form-section .form-container {
     font-style: normal;
 }
 
-/* Style the toggle switch */
 .form-check-input {
-    background-color: #6a0dad; /* Purple background for the toggle */
-    border-color: #6a0dad; /* Purple border */
+    background-color: #6a0dad;
+    border-color: #6a0dad;
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .form-check-input:checked {
-    background-color: #4b0082; /* Darker purple when toggled on */
-    border-color: #4b0082; /* Darker purple border when toggled on */
-    box-shadow: 0px 0px 5px rgba(75, 0, 130, 0.5); /* Subtle glow effect */
+    background-color: #4b0082;
+    border-color: #4b0082;
+    box-shadow: 0px 0px 5px rgba(75, 0, 130, 0.5);
 }
 
 .form-check-input:focus {
     box-shadow: 0px 0px 5px rgba(106, 13, 173, 0.5); 
 }
-
