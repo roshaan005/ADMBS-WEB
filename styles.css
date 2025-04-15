@@ -1235,8 +1235,7 @@ body.dark-mode .form-section .form-container {
 
 @font-face {
     font-family: 'Handsome';
-    src: url('handsome.woff2') format('woff2'),
-         url('handsome.woff') format('woff'),
+    src: 
          url('handsome.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;

@@ -1,34 +1,5 @@
-window.onscroll = function () {
-    const btn = document.getElementById("scrollTopBtn");
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        btn.style.display = "block";
-    } else {
-        btn.style.display = "none";
-    }
-};
-
-function scrollToTop() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-}
-const valuesCollapse = document.getElementById('collapseValues');
-const valuesArrowIcon = document.getElementById('arrowIcon');
-
-valuesCollapse.addEventListener('show.bs.collapse', () => {
-    console.log('Our Values expanded');
-    valuesArrowIcon.classList.remove('bi-chevron-down');
-    valuesArrowIcon.classList.add('bi-chevron-up');
-});
-
-valuesCollapse.addEventListener('hide.bs.collapse', () => {
-    console.log('Our Values collapsed');
-    valuesArrowIcon.classList.remove('bi-chevron-up');
-    valuesArrowIcon.classList.add('bi-chevron-down');
-});
-
-const faqCollapse = document.getElementById('collapseFAQ');
+// FAQ Collapse Arrow Toggle
+const faqCollapse = document.getElementById('collapseFAQ'); // Declare once
 const faqArrowIcon = document.getElementById('faqArrowIcon');
 
 faqCollapse.addEventListener('show.bs.collapse', () => {
@@ -42,3 +13,22 @@ faqCollapse.addEventListener('hide.bs.collapse', () => {
     faqArrowIcon.classList.remove('bi-chevron-up');
     faqArrowIcon.classList.add('bi-chevron-down');
 });
+// Scroll to Top Functionality
+window.onscroll = function () {
+    const btn = document.getElementById("scrollTopBtn");
+    console.log("Scroll position:", document.documentElement.scrollTop); // Debugging
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        console.log("Showing Scroll to Top button");
+        btn.style.display = "block"; // Show the button
+    } else {
+        console.log("Hiding Scroll to Top button");
+        btn.style.display = "none"; // Hide the button
+    }
+};
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
