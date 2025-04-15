@@ -185,8 +185,8 @@ body.dark-mode .contact-us-section .picture-div {
 }
 
 body {
-    background-color: var(--gray);
-    color: #333;
+    background-color: #dfd6e3; /* Slightly darker white */
+    color: #333; /* Ensure text remains readable */
     font-family: 'Inter', sans-serif;
 }
 
