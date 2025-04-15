@@ -238,14 +238,43 @@
                 </p>
                 <ul class="list-unstyled">
                     <li class="mb-3 d-flex align-items-center">
+                        <a href="mailto:support@credily.com" class="text-decoration-none text-dark">
                         <i class="bi bi-envelope-fill text-purple me-3 fs-4"></i>
-                        <span><strong>Email:</strong> support@credily.com</span>
+                            <strong>Email:</strong> support@credily.com
+                        </a>
                     </li>
                     <li class="d-flex align-items-center">
-                        <i class="bi bi-telephone-fill text-purple me-3 fs-4"></i>
-                        <span><strong>Phone (Pakistan):</strong> +92 3366278600</span>
+                        <a href="tel:+923366278600" class="text-decoration-none text-dark">
+                            <i class="bi bi-telephone-fill text-purple me-3 fs-4"></i>
+                            <strong>Phone (Pakistan):</strong> +92 3366278600
+                        </a>
                     </li>
                 </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Email Modal -->
+<div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="emailModalLabel">Send Us an Email</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="mailto:support@credily.com" method="post" enctype="text/plain">
+                    <div class="mb-3">
+                        <label for="emailSubject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="emailSubject" name="subject" placeholder="Enter your subject">
+                    </div>
+                    <div class="mb-3">
+                        <label for="emailMessage" class="form-label">Message</label>
+                        <textarea class="form-control" id="emailMessage" name="body" rows="4" placeholder="Enter your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Email</button>
+                </form>
             </div>
         </div>
     </div>
