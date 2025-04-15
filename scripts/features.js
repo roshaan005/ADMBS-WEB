@@ -1,4 +1,4 @@
-   // Show or hide the button when scrolling
+// Show or hide the button when scrolling
    window.onscroll = function () {
     const btn = document.getElementById("scrollTopBtn");
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
