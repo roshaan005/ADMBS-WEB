@@ -15,3 +15,17 @@ function scrollToTop() {
         behavior: 'smooth'
     });
 }
+function handleSubmit(e) {
+    e.preventDefault();
+  
+    // Show Bootstrap Modal
+    const modal = new bootstrap.Modal(document.getElementById('confirmationModal'));
+    modal.show();
+  
+    // Fire Confetti
+    confetti({
+      particleCount: 150,
+      spread: 100,
+      origin: { y: 0.6 }
+    });
+  }
