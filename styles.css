@@ -1285,3 +1285,7 @@ body.dark-mode .form-section .form-container {
     animation: fadeInScale 1s ease-in-out;
     animation-delay: 1s;
   }
+  .modal-content {
+    background-color: white;
+    color: black;
+  }
