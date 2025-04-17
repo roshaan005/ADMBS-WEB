@@ -263,6 +263,7 @@ body.dark-mode .navbar.fixed-top {
   padding: 80px 0;
   text-align: center;
   height: 100vh;
+  
 }
 
 .hero2 {
@@ -274,9 +275,6 @@ body.dark-mode .navbar.fixed-top {
     height: 100vh;
 }
 
-.cont {
-    margin-bottom: 5%;
-}
 
 .hero h1 {
     font-size: 4rem;
