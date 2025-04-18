@@ -336,7 +336,7 @@ body.dark-mode .navbar.fixed-top {
 }
 
 .image2 {
-    width: 60%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -795,7 +795,7 @@ body.dark-mode .form-section .form-container {
 
 /* Glass card styling */
 .card.glass {
-    width: 50%;
+    width: 90%;
     max-width: 600px; /* Ensure it doesn't exceed a reasonable width */
     margin: 2rem auto; /* Center the card with margin */
     padding: 2rem;
@@ -882,6 +882,9 @@ body.dark-mode .form-section .form-container {
         column-count: 2;
     }
     
+    .footer{
+        width:100vw;
+    }
     .navbar-brand {
         font-size: 1.5rem;
     }
@@ -1138,7 +1141,9 @@ body.dark-mode .form-section .form-container {
         top: 5%;
         left: 5%;
     }
-      
+      .footer{
+        width: 100vw;
+      }
     .chat-bubble:nth-child(4) {
         bottom: 5%;
         right: 5%;
@@ -1244,6 +1249,14 @@ body.dark-mode .form-section .form-container {
         padding: 0.6rem; /* Adjust button padding */
         font-size: 0.9rem; /* Adjust button font size */
     }
+    .image1{
+        width:50%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
 }
 
 @font-face {
